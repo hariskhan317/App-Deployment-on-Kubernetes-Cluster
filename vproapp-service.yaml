@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-        name: vproapp-service
+  name: vproapp-service
 spec:
-        ports:
-                - port: 80
-                  targetPort: vproapp-port
-                  Protocol: TCP
-        selector:
-                app: vproapp
-        Type: LoadBalancer      
+  ports:
+  - port: 80
+    targetPort: vproapp-port
+    protocol: TCP
+  selector:
+    app: vproapp
+  type: LoadBalancer

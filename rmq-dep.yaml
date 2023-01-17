@@ -14,7 +14,7 @@ spec:
                         labels:
                                 app: vpromq01
                 spec:
-                        container:
+                        containers:
                               - name: vpromq01
                                 image: rabbitmq
                                 ports:
@@ -27,5 +27,4 @@ spec:
                                                         name: app-secret
                                                         key: rmq-pass
                                       - name: RABBITMQ_DEFAULT_USER
-                                        value: "guest"  
-
+                                        value: "guest"
